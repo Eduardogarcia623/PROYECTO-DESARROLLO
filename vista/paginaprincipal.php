@@ -9,7 +9,7 @@
 
 </header>
 <center>
-<link rel=stylesheet href=css/estilos.css>
+<link rel=stylesheet href=../css/estilos.css>
 <?php
 
 
@@ -18,13 +18,13 @@ session_start();
 $usuario = $_SESSION [ 'username'];
 
 if(!isset($usuario)){
-    header("location: login.php");
+    header("location: ../vista/login.php");
 }
 else{
 
     echo "<h1> BIENVENIDO $usuario </h1>";
 
-    echo "<a href='logica/salir.php' > SALIR </a> ";
+    echo "<a href='../controlador/salir.php' > SALIR </a> ";
 
 }
 ?>

@@ -11,10 +11,10 @@ $array = mysqli_fetch_array($consulta);
 
 if($array['contar']>0){
     $_SESSION['username'] = $usuario;
-    header("location: ../paginaprincipal.php");
+    header("location: ../vista/paginaprincipal.php");
 
 } else{
-    header("location: ../login.php");
+    header("location: ../vista/login.php");
 }
 
 ?>
